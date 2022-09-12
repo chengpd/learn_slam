@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.23)
-project(ch2)
+cmake_minimum_required( VERSION 2.8 )
+project( useEigen )
 
-set(CMAKE_CXX_STANDARD 14)
+set( CMAKE_BUILD_TYPE "Release" )
+set( CMAKE_CXX_FLAGS "-O3" )
 
-add_executable(ch2 main.cpp)
+# 添加Eigen头文件
+include_directories( "/usr/include/eigen3" )
+
+add_executable( eigen eigen_learn.cpp )
+
+
