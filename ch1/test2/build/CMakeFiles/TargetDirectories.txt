@@ -1,0 +1,9 @@
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/install/strip.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/install/local.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/install.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/sayhellostaticlib.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/sayhellolib.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/main.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/edit_cache.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/rebuild_cache.dir
+/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/list_install_components.dir

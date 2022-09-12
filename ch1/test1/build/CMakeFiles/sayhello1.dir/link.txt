@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/sayhello1.dir/sayhello.cpp.o  -o sayhello1 libhellolib.a 
