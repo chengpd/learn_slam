@@ -1,44 +1,34 @@
-
 #include <string>
-
 #include <iostream>
 #include <fstream>
 #include "unistd.h"
+#include "/usr/local/include/pangolin/pangolin.h"
 #include <sophus/se3.h>
-#include <pangolin/pangolin.h>
-// need pangolin for plotting trajectory
-
 
 using namespace std;
-
-// path to trajectory file
-string trajectory_file = "./trajectory.txt";
-
-// function for plotting trajectory, don't edit this code
-// start point is red and end point is blue
+using namespace pangolin;
 void DrawTrajectory(vector<Sophus::SE3, Eigen::aligned_allocator<Sophus::SE3>>);
+
+
+
+
+
+
+
 
 int main(int argc, char **argv) {
 
-    vector<Sophus::SE3, Eigen::aligned_allocator<Sophus::SE3>> poses;
 
-    /// implement pose reading code
-    // start your code here (5~10 lines)
-    //主要代码
+   std::vector<Sophus::SE3, Eigen::aligned_allocator<Sophus::SE3>> poses;
 
 
 
-    
-    
-    
-    // end your code here
 
-    // draw trajectory in pangolin
-    DrawTrajectory(poses);
+
     return 0;
 }
 
-/*******************************************************************************************/
+
 void DrawTrajectory(vector<Sophus::SE3, Eigen::aligned_allocator<Sophus::SE3>> poses) {
     if (poses.empty()) {
         cerr << "Trajectory is empty!" << endl;
@@ -81,3 +71,4 @@ void DrawTrajectory(vector<Sophus::SE3, Eigen::aligned_allocator<Sophus::SE3>> p
     }
 
 }
+

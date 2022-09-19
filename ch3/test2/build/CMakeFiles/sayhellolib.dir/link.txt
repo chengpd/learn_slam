@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libsayhellolib.so -o ../out/lib/libsayhellolib.so CMakeFiles/sayhellolib.dir/src/sayHello.cpp.o 
