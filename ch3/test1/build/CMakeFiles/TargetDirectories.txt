@@ -1,3 +1,3 @@
 /home/cp/learn_slam/ch3/test1/build/CMakeFiles/rebuild_cache.dir
-/home/cp/learn_slam/ch3/test1/build/CMakeFiles/draw_trajectory.dir
+/home/cp/learn_slam/ch3/test1/build/CMakeFiles/draw.dir
 /home/cp/learn_slam/ch3/test1/build/CMakeFiles/edit_cache.dir

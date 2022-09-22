@@ -48,60 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cp/learn_slam/0/CMake_learn
+CMAKE_SOURCE_DIR = /home/cp/learn_slam/ch3/test2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cp/learn_slam/0/CMake_learn/build
+CMAKE_BINARY_DIR = /home/cp/learn_slam/ch3/test2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -114,21 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/ch3/test2/build/CMakeFiles /home/cp/learn_slam/ch3/test2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/ch3/test2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,100 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sayhellostaticlib
+# Target rules for targets named error
 
 # Build rule for target.
-sayhellostaticlib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sayhellostaticlib
-.PHONY : sayhellostaticlib
+error: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 error
+.PHONY : error
 
 # fast build rule for target.
-sayhellostaticlib/fast:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/build
-.PHONY : sayhellostaticlib/fast
+error/fast:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/build
+.PHONY : error/fast
 
-#=============================================================================
-# Target rules for targets named sayhellolib
+error.o: error.cpp.o
 
-# Build rule for target.
-sayhellolib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sayhellolib
-.PHONY : sayhellolib
-
-# fast build rule for target.
-sayhellolib/fast:
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/build
-.PHONY : sayhellolib/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : error.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+error.cpp.o:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/error.cpp.o
+.PHONY : error.cpp.o
 
-main.i: main.cpp.i
+error.i: error.cpp.i
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-src/sayHello.o: src/sayHello.cpp.o
-
-.PHONY : src/sayHello.o
-
-# target to build an object file
-src/sayHello.cpp.o:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/src/sayHello.cpp.o
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/src/sayHello.cpp.o
-.PHONY : src/sayHello.cpp.o
-
-src/sayHello.i: src/sayHello.cpp.i
-
-.PHONY : src/sayHello.i
+.PHONY : error.i
 
 # target to preprocess a source file
-src/sayHello.cpp.i:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/src/sayHello.cpp.i
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/src/sayHello.cpp.i
-.PHONY : src/sayHello.cpp.i
+error.cpp.i:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/error.cpp.i
+.PHONY : error.cpp.i
 
-src/sayHello.s: src/sayHello.cpp.s
+error.s: error.cpp.s
 
-.PHONY : src/sayHello.s
+.PHONY : error.s
 
 # target to generate assembly for a file
-src/sayHello.cpp.s:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/src/sayHello.cpp.s
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/src/sayHello.cpp.s
-.PHONY : src/sayHello.cpp.s
+error.cpp.s:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/error.cpp.s
+.PHONY : error.cpp.s
 
 # Help Target
 help:
@@ -258,21 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... sayhellostaticlib"
-	@echo "... sayhellolib"
-	@echo "... main"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... src/sayHello.o"
-	@echo "... src/sayHello.i"
-	@echo "... src/sayHello.s"
+	@echo "... error"
+	@echo "... edit_cache"
+	@echo "... error.o"
+	@echo "... error.i"
+	@echo "... error.s"
 .PHONY : help
 
 

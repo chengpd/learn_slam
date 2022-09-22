@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cp/learn_slam/ch4/test4/gaussnewton.cpp
+iostream
+-
+opencv2/opencv.hpp
+-
+Eigen/Core
+-
+Eigen/Dense
+-
+

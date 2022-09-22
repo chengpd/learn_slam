@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named draw_trajectory
+# Target rules for targets named draw
 
 # Build rule for target.
-draw_trajectory: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 draw_trajectory
-.PHONY : draw_trajectory
+draw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 draw
+.PHONY : draw
 
 # fast build rule for target.
-draw_trajectory/fast:
-	$(MAKE) -f CMakeFiles/draw_trajectory.dir/build.make CMakeFiles/draw_trajectory.dir/build
-.PHONY : draw_trajectory/fast
+draw/fast:
+	$(MAKE) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/build
+.PHONY : draw/fast
 
 draw_trajectory.o: draw_trajectory.cpp.o
 
@@ -129,7 +129,7 @@ draw_trajectory.o: draw_trajectory.cpp.o
 
 # target to build an object file
 draw_trajectory.cpp.o:
-	$(MAKE) -f CMakeFiles/draw_trajectory.dir/build.make CMakeFiles/draw_trajectory.dir/draw_trajectory.cpp.o
+	$(MAKE) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/draw_trajectory.cpp.o
 .PHONY : draw_trajectory.cpp.o
 
 draw_trajectory.i: draw_trajectory.cpp.i
@@ -138,7 +138,7 @@ draw_trajectory.i: draw_trajectory.cpp.i
 
 # target to preprocess a source file
 draw_trajectory.cpp.i:
-	$(MAKE) -f CMakeFiles/draw_trajectory.dir/build.make CMakeFiles/draw_trajectory.dir/draw_trajectory.cpp.i
+	$(MAKE) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/draw_trajectory.cpp.i
 .PHONY : draw_trajectory.cpp.i
 
 draw_trajectory.s: draw_trajectory.cpp.s
@@ -147,7 +147,7 @@ draw_trajectory.s: draw_trajectory.cpp.s
 
 # target to generate assembly for a file
 draw_trajectory.cpp.s:
-	$(MAKE) -f CMakeFiles/draw_trajectory.dir/build.make CMakeFiles/draw_trajectory.dir/draw_trajectory.cpp.s
+	$(MAKE) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/draw_trajectory.cpp.s
 .PHONY : draw_trajectory.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... draw_trajectory"
+	@echo "... draw"
 	@echo "... edit_cache"
 	@echo "... draw_trajectory.o"
 	@echo "... draw_trajectory.i"

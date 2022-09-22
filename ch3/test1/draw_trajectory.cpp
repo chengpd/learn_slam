@@ -10,7 +10,7 @@
 using namespace std;
 
 // path to trajectory file
-string trajectory_file = "./trajectory.txt";
+string trajectory_file = "../trajectory.txt";
 
 // function for plotting trajectory, don't edit this code
 // start point is red and end point is blue
@@ -34,12 +34,12 @@ int main(int argc, char **argv) {
     }
     fin.close();
     
-    cout<<"你别优化了，我挺好的，真的...";
+    cout<<"你别优化了，我挺好的，真的..."<<endl;
     
     // end your code here
 
     // draw trajectory in pangolin
-   DrawTrajectory(poses);
+    DrawTrajectory(poses);
     return 0;
 }
 

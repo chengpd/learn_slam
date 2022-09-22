@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o ../out/bin/main -Wl,-rpath,/home/cp/learn_slam/0/CMake_learn/out/lib ../out/lib/libsayhellolib.so 

@@ -54,119 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cp/learn_slam/0/CMake_learn
+CMAKE_SOURCE_DIR = /home/cp/learn_slam/ch3/test2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cp/learn_slam/0/CMake_learn/build
+CMAKE_BINARY_DIR = /home/cp/learn_slam/ch3/test2/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/sayhellostaticlib.dir
+# Target rules for target CMakeFiles/error.dir
 
 # All Build rule for target.
-CMakeFiles/sayhellostaticlib.dir/all:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/depend
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles --progress-num=5,6 "Built target sayhellostaticlib"
-.PHONY : CMakeFiles/sayhellostaticlib.dir/all
+CMakeFiles/error.dir/all:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/depend
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cp/learn_slam/ch3/test2/build/CMakeFiles --progress-num=1,2 "Built target error"
+.PHONY : CMakeFiles/error.dir/all
 
 # Include target in all.
-all: CMakeFiles/sayhellostaticlib.dir/all
+all: CMakeFiles/error.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sayhellostaticlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sayhellostaticlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 0
-.PHONY : CMakeFiles/sayhellostaticlib.dir/rule
+CMakeFiles/error.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/ch3/test2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/error.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/ch3/test2/build/CMakeFiles 0
+.PHONY : CMakeFiles/error.dir/rule
 
 # Convenience name for target.
-sayhellostaticlib: CMakeFiles/sayhellostaticlib.dir/rule
+error: CMakeFiles/error.dir/rule
 
-.PHONY : sayhellostaticlib
-
-# clean rule for target.
-CMakeFiles/sayhellostaticlib.dir/clean:
-	$(MAKE) -f CMakeFiles/sayhellostaticlib.dir/build.make CMakeFiles/sayhellostaticlib.dir/clean
-.PHONY : CMakeFiles/sayhellostaticlib.dir/clean
+.PHONY : error
 
 # clean rule for target.
-clean: CMakeFiles/sayhellostaticlib.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/sayhellolib.dir
-
-# All Build rule for target.
-CMakeFiles/sayhellolib.dir/all:
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/depend
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles --progress-num=3,4 "Built target sayhellolib"
-.PHONY : CMakeFiles/sayhellolib.dir/all
-
-# Include target in all.
-all: CMakeFiles/sayhellolib.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/sayhellolib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sayhellolib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 0
-.PHONY : CMakeFiles/sayhellolib.dir/rule
-
-# Convenience name for target.
-sayhellolib: CMakeFiles/sayhellolib.dir/rule
-
-.PHONY : sayhellolib
+CMakeFiles/error.dir/clean:
+	$(MAKE) -f CMakeFiles/error.dir/build.make CMakeFiles/error.dir/clean
+.PHONY : CMakeFiles/error.dir/clean
 
 # clean rule for target.
-CMakeFiles/sayhellolib.dir/clean:
-	$(MAKE) -f CMakeFiles/sayhellolib.dir/build.make CMakeFiles/sayhellolib.dir/clean
-.PHONY : CMakeFiles/sayhellolib.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/sayhellolib.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/sayhellolib.dir/all
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cp/learn_slam/0/CMake_learn/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Include target in all.
-all: CMakeFiles/main.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/learn_slam/0/CMake_learn/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/error.dir/clean
 
 .PHONY : clean
 

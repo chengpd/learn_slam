@@ -55,6 +55,7 @@ int main(int argc, char **argv) {
 
     // 画图去畸变后图像
     cv::imshow("image undistorted", image_undistort);
+    cv::imwrite("./undistorted.jpg",image_undistort);
     cv::waitKey();
 
     return 0;

@@ -1,31 +1,13 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 
-project(hello)
+project(error)
 
-set(CMAKE_BUILD_TYPE Release)
+find_package(Pangolin REQUIRED)
+find_package(Sophus REQUIRED)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/out/bin)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/out/lib)
+include_directories(${Pangolin_INCLUDE_DIRS})
+include_directories(${Sophus_INCLUDE_DIRS})
 
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
+add_executable(error error.cpp)
+target_link_libraries(error   ${Sophus_LIBRARIES}  ${Pangolin_LIBRARIES})
 
-MESSAGE(STATUS " ni shuo de dou dui!")
-
-add_library(sayhellolib SHARED src/sayHello.cpp)
-
-add_library(sayhellostaticlib  src/sayHello.cpp)
-
-add_executable(main main.cpp)
-
-target_link_libraries(main sayhellolib)
-
-
-#install
-set(CMAKE_INSTALL_PREFIX /usr/local)
-
-install(FILES ${PROJECT_SOURCE_DIR}/include/hello.h DESTINATION include)
-
-install(TARGETS sayhellolib sayhellostaticlib
-LIBRARY  DESTINATION lib
-ARCHIVE  DESTINATION lib
-)

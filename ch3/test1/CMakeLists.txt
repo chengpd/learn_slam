@@ -4,14 +4,12 @@ project(tra)
 
 find_package(Pangolin REQUIRED)
 find_package(Sophus REQUIRED)
-#find_package((OpenGL REQUIRED))
 
 include_directories(${Pangolin_INCLUDE_DIRS})
 include_directories(${Sophus_INCLUDE_DIRS})
-#include_directories(${OpenGL_INCLUDE_DIRS})
 
-add_executable(draw_trajectory     draw_trajectory.cpp)
-target_link_libraries(draw_trajectory     ${Sophus_LIBRARIES}  ${Pangolin_LIBRARIES})
+add_executable(draw    draw_trajectory.cpp)
+target_link_libraries(draw     ${Sophus_LIBRARIES}  ${Pangolin_LIBRARIES})
 
 
 
