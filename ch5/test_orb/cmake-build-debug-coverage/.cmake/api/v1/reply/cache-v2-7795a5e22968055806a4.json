@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb/cmake-build-debug"
+			"value" : "/home/cp/learn_slam/ch5/test_orb/cmake-build-debug-coverage"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-7"
+			"value" : "/usr/bin/gcc-ar-9"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-7"
+			"value" : "/usr/bin/gcc-ranlib-9"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "--coverage"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-7"
+			"value" : "/usr/bin/gcc-ar-9"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-7"
+			"value" : "/usr/bin/gcc-ranlib-9"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "--coverage"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_DEBUG",
@@ -591,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb"
+			"value" : "/home/cp/learn_slam/ch5/test_orb"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb/cmake-build-debug"
+			"value" : "/home/cp/learn_slam/ch5/test_orb/cmake-build-debug-coverage"
 		},
 		{
 			"name" : "ComputeORB_IS_TOP_LEVEL",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb"
+			"value" : "/home/cp/learn_slam/ch5/test_orb"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenCV",
@@ -1172,42 +1172,6 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/share/OpenCV"
-		},
-		{
-			"name" : "test_orb_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb/cmake-build-debug"
-		},
-		{
-			"name" : "test_orb_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "test_orb_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/cp/learn_slam/ch5/L5/test_orb"
 		}
 	],
 	"kind" : "cache",
