@@ -1,4 +1,0 @@
-/home/cp/learn_slam/ch5/test_orb/cmake-build-debug/CMakeFiles/computeORB.dir
-/home/cp/learn_slam/ch5/test_orb/cmake-build-debug/CMakeFiles/test.dir
-/home/cp/learn_slam/ch5/test_orb/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/cp/learn_slam/ch5/test_orb/cmake-build-debug/CMakeFiles/rebuild_cache.dir
