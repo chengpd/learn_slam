@@ -1,8 +1,4 @@
-<<<<<<< HEAD:ch5/test_04_ICP/cmake-build-debug/cmake_install.cmake
-# Install script for directory: /home/cp/learn_slam/ch5/test_04_ICP
-=======
 # Install script for directory: /home/cp/learn_slam/ch5/test_orb
->>>>>>> main:ch5/test_orb/cmake-build-debug/cmake_install.cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -54,9 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD:ch5/test_04_ICP/cmake-build-debug/cmake_install.cmake
-file(WRITE "/home/cp/learn_slam/ch5/test_04_ICP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "/home/cp/learn_slam/ch5/test_orb/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> main:ch5/test_orb/cmake-build-debug/cmake_install.cmake
+file(WRITE "/home/cp/learn_slam/ch5/test_orb/cmake-build-debug-coverage/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
