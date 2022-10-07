@@ -1,0 +1,5 @@
+/home/cp/clion-2022.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/cp/clion-2022.1.2/bin/ninja/linux/ninja -G Ninja -S /home/cp/learn_slam/ch5/test_01_orb -B /home/cp/learn_slam/ch5/test_01_orb/cmake-build-debug
+-- CMAKE_BUILD_TYPE IS Debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cp/learn_slam/ch5/test_01_orb/cmake-build-debug

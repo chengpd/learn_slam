@@ -32,11 +32,12 @@ int main(int argc, char **argv) {
     Eigen::JacobiSVD<Matrix3d> svd(E,ComputeFullU|ComputeFullV); //svd分解
     Matrix3d U=svd.matrixU();
     Matrix3d V=svd.matrixV();
-    Matrix3d SIGMA=U.inverse()*E*V.transpose().inverse();
     Vector3d sigma_value = svd.singularValues();
+
+
     //处理后的sigma值
     Vector3d sigma_value2={(sigma_value[0]+sigma_value[1])/2,(sigma_value[0]+sigma_value[1])/2,0};
-    Matrix3d SIGMA2=sigma_value2.asDiagonal();
+    Matrix3d SIGMA=sigma_value2.asDiagonal();
     // END YOUR CODE HERE
 
     // set t1, t2, R1, R2 
@@ -49,20 +50,25 @@ int main(int argc, char **argv) {
 
     Matrix3d RZ1=AngleAxisd(M_PI/2,Vector3d(0,0,1)).toRotationMatrix();
     Matrix3d RZ2=AngleAxisd(-M_PI/2,Vector3d(0,0,1)).toRotationMatrix();
-    t_wedge1=U*RZ1*SIGMA2*U.transpose();
-    t_wedge2=U*RZ2*SIGMA2*U.transpose();
+    t_wedge1=U*RZ1*SIGMA*U.transpose();
+    t_wedge2=U*RZ2*SIGMA*U.transpose();
     R1=U*RZ1.transpose()*V.transpose();
     R2=U*RZ2.transpose()*V.transpose();
     // END YOUR CODE HERE
 
-    cout << "R1 = " << R1 << endl;
-    cout << "R2 = " << R2 << endl;
-    cout << "t1 = " << Sophus::SO3::vee(t_wedge1) << endl;
-    cout << "t2 = " << Sophus::SO3::vee(t_wedge2) << endl;
+    cout << "R1 = \n" << R1 << endl;
+    cout<<endl;
+    cout << "R2 = \n" << R2 << endl;
+    cout<<endl;
+
+    cout << "t1^T = " << Sophus::SO3::vee(t_wedge1).transpose() << endl;
+    cout << "t2^T = " << Sophus::SO3::vee(t_wedge2).transpose() << endl;
 
     // check t^R=E up to scale
     Matrix3d tR = t_wedge1 * R1;
-    cout << "t^R = " << tR << endl;
+    cout<<endl;
+    cout << "t^R = "<<endl;
+    cout << tR << endl;
 
     return 0;
 }

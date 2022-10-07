@@ -29,7 +29,6 @@ std::mutex m;
  * @param [in|out] detected keypoints
  */
 void computeAngle(const cv::Mat &image, vector<cv::KeyPoint> &keypoints);
-
 /**
  * Multi-threaded compute angle
  * @param image
