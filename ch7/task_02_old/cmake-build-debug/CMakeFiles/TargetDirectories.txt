@@ -1,0 +1,4 @@
+/home/cp/learn_slam/ch7/task_02/cmake-build-debug/CMakeFiles/bal_common.dir
+/home/cp/learn_slam/ch7/task_02/cmake-build-debug/CMakeFiles/test.dir
+/home/cp/learn_slam/ch7/task_02/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cp/learn_slam/ch7/task_02/cmake-build-debug/CMakeFiles/rebuild_cache.dir

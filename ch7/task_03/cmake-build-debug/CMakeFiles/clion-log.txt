@@ -1,0 +1,23 @@
+/home/cp/clion-2022.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/cp/clion-2022.1.2/bin/ninja/linux/ninja -G Ninja -S /home/cp/learn_slam/ch7/task_03 -B /home/cp/learn_slam/ch7/task_03/cmake-build-debug
+-- Found Eigen3: /usr/include/eigen3 (Required is at least version "2.91.0") 
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.3.4 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+-- Detected gflags version: 2.2.1
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.13.0 installed in: /usr with components: [LAPACK, SuiteSparse, SparseLinearAlgebraLibrary, CXSparse, SchurSpecializations, OpenMP]
+CMake Warning (dev) at /home/cp/clion-2022.1.2/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (CSPARSE)
+  does not match the name of the calling package (CSparse).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  //home/cp/g2o/cmake_modules/FindCSparse.cmake:24 (find_package_handle_standard_args)
+  CMakeLists.txt:12 (Find_Package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CSPARSE: /usr/include/suitesparse  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cp/learn_slam/ch7/task_03/cmake-build-debug

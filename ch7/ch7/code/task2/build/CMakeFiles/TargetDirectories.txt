@@ -1,0 +1,4 @@
+/home/cp/learn_slam/ch7/ch7/code/task2/build/CMakeFiles/bal_common.dir
+/home/cp/learn_slam/ch7/ch7/code/task2/build/CMakeFiles/bundle_adjustment_g2o.dir
+/home/cp/learn_slam/ch7/ch7/code/task2/build/CMakeFiles/edit_cache.dir
+/home/cp/learn_slam/ch7/ch7/code/task2/build/CMakeFiles/rebuild_cache.dir
